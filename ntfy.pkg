@@ -1,0 +1,12 @@
+v 3
+d ntfy. Send push notifications from Stata to a phone or desktop via ntfy
+d
+d {cmd:ntfy} publishes a message to an ntfy topic (https://ntfy.sh), so
+d you get a push notification, e.g. when a long run finishes. Messages are
+d sent by Stata's built-in Java: no curl, shell window or extra software.
+d
+d Author: Barna Szabo, Karolinska Institutet
+d Requires: Stata 16 or later
+d Distribution-Date: 20261115
+f ntfy.ado
+f ntfy.sthlp
