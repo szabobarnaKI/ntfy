@@ -14,7 +14,7 @@ Requires Stata 16 or later.
 From a public GitHub repository:
 
 ```stata
-net install ntfy, from("https://raw.githubusercontent.com/<user>/<repo>/main/<folder>") replace
+net install ntfy, from("https://raw.githubusercontent.com/szabobarnaKI/ntfy/main") replace
 ```
 
 Or by hand: copy `ntfy.ado` and `ntfy.sthlp` into your PERSONAL ado folder (type `sysdir` in Stata to find it).
