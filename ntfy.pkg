@@ -5,8 +5,9 @@ d {cmd:ntfy} publishes a message to an ntfy topic (https://ntfy.sh), so
 d you get a push notification, e.g. when a long run finishes. Messages are
 d sent by Stata's built-in Java: no curl, shell window or extra software.
 d
-d Author: Barna Szabo, Karolinska Institutet
+d Program by Barna Szabó-Söderberg, Karolinska Institutet (barna.szabo@ki.se)
+d Developed using substantial work from Claude AI (Anthropic), with human supervision.
 d Requires: Stata 16 or later
-d Distribution-Date: 20261115
+d Distribution-Date: 20261123
 f ntfy.ado
 f ntfy.sthlp

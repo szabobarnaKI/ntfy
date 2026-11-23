@@ -1,4 +1,4 @@
 v 3
 d ntfy: send push notifications from Stata to your phone via ntfy
-d Barna Szabo, Karolinska Institutet
+d Program by Barna Szabó-Söderberg
 p ntfy Send a push notification to an ntfy topic (https://ntfy.sh)

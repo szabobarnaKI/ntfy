@@ -1,11 +1,18 @@
 {smcl}
-{* *! version 1.0.1  15nov2026}{...}
+{* *! version 1.0.2  23nov2026}{...}
+{viewerjumpto "Syntax" "ntfy##syntax"}{...}
+{viewerjumpto "Description" "ntfy##description"}{...}
+{viewerjumpto "Examples" "ntfy##examples"}{...}
+{viewerjumpto "Tags" "ntfy##tags"}{...}
+{viewerjumpto "Stored results" "ntfy##results"}{...}
+{viewerjumpto "AI disclosure" "ntfy##ai"}{...}
 {title:Title}
 
 {phang}
 {bf:ntfy} {hline 2} Send a push notification to an ntfy topic
 
 
+{marker syntax}{...}
 {title:Syntax}
 
 {p 8 16 2}
@@ -25,6 +32,7 @@
 {p 4 6 2}* {opt topic()} is required.{p_end}
 
 
+{marker description}{...}
 {title:Description}
 
 {pstd}
@@ -41,6 +49,7 @@ By default a failed send only prints a note, so a notification problem never
 stops a long job. Specify {opt strict} to make it an error (rc 677).
 
 
+{marker examples}{...}
 {title:Examples}
 
 {phang}{cmd:. ntfy "Bootstrap finished", topic(mytopic_8f3k)}{p_end}
@@ -50,6 +59,7 @@ stops a long job. Specify {opt strict} to make it an error (rc 677).
 {phang}{cmd:. ntfy "analysis.do ended, rc=`rc'", topic(mytopic_8f3k) title("Stata") priority(`=cond(`rc',5,3)') tags(`=cond(`rc',"rotating_light","white_check_mark")')}{p_end}
 
 
+{marker tags}{...}
 {title:Tags}
 
 {pstd}
@@ -135,6 +145,7 @@ the full list see
 {browse "https://docs.ntfy.sh/emojis/":docs.ntfy.sh/emojis}.
 
 
+{marker results}{...}
 {title:Stored results}
 
 {synoptset 15 tabbed}{...}
@@ -146,8 +157,26 @@ the full list see
 {synopt:{cmd:r(id)}}message id returned by the server{p_end}
 
 
+{marker remarks}{...}
 {title:Remarks}
 
 {pstd}
 On the public server anyone who knows the topic name can read its messages,
 so use a hard-to-guess name and do not send confidential data.
+
+
+{marker ai}{...}
+{title:AI disclosure}
+
+{pstd}
+This command was developed using substantial work from Claude AI (Anthropic), with human supervision.
+{p_end}
+
+{marker author}{...}
+{title:Author}
+
+{pstd}
+Barna Szabó-Söderberg{break}
+{it:Karolinska Institutet}{break}
+{ul:barna.szabo@ki.se}
+{p_end}

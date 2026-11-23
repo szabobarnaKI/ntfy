@@ -14,7 +14,7 @@ Requires Stata 16 or later.
 From a public GitHub repository:
 
 ```stata
-net install ntfy, from("https://raw.githubusercontent.com/szabobarnaKI/ntfy/main") replace
+net install ntfy, from("https://raw.githubusercontent.com/<user>/<repo>/main/<folder>") replace
 ```
 
 Or by hand: copy `ntfy.ado` and `ntfy.sthlp` into your PERSONAL ado folder (type `sysdir` in Stata to find it).
@@ -43,6 +43,14 @@ ntfy "analysis.do ended, rc=`rc'", topic(mytopic_8f3k) title("Stata") ///
 Stored results: `r(sent)`, `r(rc)`, `r(topic)`, `r(id)`. See `help ntfy` for the list of tags.
 
 On the public server, anyone who knows a topic name can read its messages. Use a hard-to-guess topic name and don't send confidential data.
+
+## AI disclosure
+
+This command was developed using substantial work from Claude AI (Anthropic), with human supervision.
+
+## Author
+
+Barna Szabó-Söderberg, Karolinska Institutet, barna.szabo@ki.se
 
 ## Files
 
